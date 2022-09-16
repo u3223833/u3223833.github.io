@@ -1,11 +1,3 @@
-/*
-    Paste the code for your week 5 exercise below.
-*/
-/* 
- MY ANNIMATED DESIGN - RAINBOW SQUARES 
- ASSIGNMENT 1 
- "PROCEDURALTHINKING"
- */
 let y = 0;
 let x = 50;
 let z = 100;
