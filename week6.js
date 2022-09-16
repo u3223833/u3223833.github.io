@@ -1,13 +1,6 @@
-/*
-    Paste the code for your week 3 exercise below.
-*/
-var pic;
+
 var bubbles = [],
   totalBubbles = 80;
-
-function preload() {
-  pic = loadImage("bubblebath.jpeg");
-}
 
 var backgroundColor = " #E91E63";
 
