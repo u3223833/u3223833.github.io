@@ -6,7 +6,7 @@ let b = 200;
 let c = 250;
 
 function setup() {
-  createCanvas(300, 300);
+  createCanvas(window.innerWidth, window.innerHeight);
   frameRate(50);
 
   hw = width / 2;
