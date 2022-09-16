@@ -1,9 +1,7 @@
-var bubbles = [];
+var bubbles=[];
   totalBubbles = 80;
 
-}
-
-var backgroundColor = " #E91E63";
+var backgroundColor = " #FFEB3B";
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -23,23 +21,26 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-  image(pic, 0, 0);
   drawBubble();
 
   drawBubble();
 }
 
 function drawBubble() {
-  bubbles.forEach(function (bubble) {
-    if (bubble.offset > height + 400) {
-      bubble.offset = 0;
-    }
+    bubbles.forEach(function (bubble) {
+      if (bubble.offset > height + 400) {
+        bubble.offset = 0;
+      }
+  
+      bubble.offset = bubble.offset + bubble.speed;
+  
 
-    bubble.offset = bubble.offset + bubble.speed;
 
     if (bubble.popped) {
       fill("#e6ffff");
-    } else {
+     }
+
+     else {
       // Draw bubble.
       fill("rgb(204, 238, 255)");
       stroke("white");
@@ -93,4 +94,3 @@ function mouseClicked() {
       bubble.popped = true;
     }
   });
-}
