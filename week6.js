@@ -1,9 +1,8 @@
-var pic;
-var bubbles = [],
+
+var bubbles ;
   totalBubbles = 80;
 
-function preload() {
-  pic = loadImage("bubblebath.jpeg");
+
 }
 
 var backgroundColor = " #E91E63";
@@ -26,8 +25,6 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-  image(pic, 0, 0);
-  drawBubble();
 
   drawBubble();
 }
