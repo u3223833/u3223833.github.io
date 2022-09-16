@@ -1,4 +1,4 @@
-var bubbles = [],
+var bubbles = [];
   totalBubbles = 80;
 
 }
