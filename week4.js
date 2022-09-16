@@ -1,12 +1,3 @@
-/*
-    Paste the code for your week 4 exercise below.
-*/
-/* 
- MY LOGO DESIGN - "GRACE&CO BOUTIQUE"
- ASSIGNMENT 1 
- "PROCEDURALTHINKING"
- */
-
  var pic;
  let midx = 256;
  let midy = 350;
