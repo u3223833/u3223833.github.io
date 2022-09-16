@@ -22,10 +22,8 @@ function setup() {
 
 function draw() {
   background(backgroundColor);
-  image(pic, 0, 0);
   drawBubble();
 
-  drawBubble();
 }
 
 function drawBubble() {
