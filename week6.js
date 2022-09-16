@@ -1,7 +1,19 @@
-var bubbles = [],
+/* 
+ MY INTERACTIVE DESIGN - POP THE BUBBLES 
+ ASSIGNMENT 1 
+ "PROCEDURALTHINKING"
+ */
+
+var pic = [],
+var image = [];
   totalBubbles = 80;
 
-var backgroundColor = " #E91E63";
+
+function preload() {
+  pic = loadImage("bubblebath.jpeg");
+
+
+var backgroundColor = " #FFEB3B";
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -23,19 +35,24 @@ function draw() {
   background(backgroundColor);
   drawBubble();
 
+  drawBubble();
 }
 
 function drawBubble() {
-  bubbles.forEach(function (bubble) {
-    if (bubble.offset > height + 400) {
-      bubble.offset = 0;
-    }
+    bubbles.forEach(function (bubble) {
+      if (bubble.offset > height + 400) {
+        bubble.offset = 0;
+      }
+  
+      bubble.offset = bubble.offset + bubble.speed;
+  
 
-    bubble.offset = bubble.offset + bubble.speed;
 
     if (bubble.popped) {
       fill("#e6ffff");
-    } else {
+     }
+
+     else {
       // Draw bubble.
       fill("rgb(204, 238, 255)");
       stroke("white");
