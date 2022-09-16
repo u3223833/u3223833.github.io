@@ -9,14 +9,8 @@
  "PROCEDURALTHINKING"
  */
 
-var pic = [];
-var image = [];
+var bubbles = [];
   totalBubbles = 80;
-
-
-function preload() {
-  pic = loadImage("bubblebath.jpeg");
-
 
 var backgroundColor = " #FFEB3B";
 
