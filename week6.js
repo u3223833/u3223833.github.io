@@ -1,11 +1,22 @@
+
+/*
+    Paste the code for your week 3 exercise below.
+*/
+
 /* 
  MY INTERACTIVE DESIGN - POP THE BUBBLES 
  ASSIGNMENT 1 
  "PROCEDURALTHINKING"
  */
 
-var bubbles;
+var pic = [];
+var image = [];
   totalBubbles = 80;
+
+
+function preload() {
+  pic = loadImage("bubblebath.jpeg");
+
 
 var backgroundColor = " #FFEB3B";
 
@@ -29,6 +40,7 @@ function draw() {
   background(backgroundColor);
   drawBubble();
 
+  drawBubble();
 }
 
 function drawBubble() {
@@ -99,4 +111,4 @@ function mouseClicked() {
       bubble.popped = true;
     }
   });
-}
+}}
